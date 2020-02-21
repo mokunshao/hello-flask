@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-    <title>{{name}} 的心愿单</title>
+    <title>{{user.name}} 的心愿单</title>
 </head>
 <body>
 <img src="{{ url_for('static', filename='images/foo.jpg') }}">
-<h2>{{name}} 的心愿单</h2>
+<h2>{{user.name}} 的心愿单</h2>
 <p>{{movies|length}} 个条目</p>
 <ul>
     {% for movie in movies %}
