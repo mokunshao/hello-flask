@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{name}} 的心愿单</title>
+</head>
+<body>
+<h2>{{name}} 的心愿单</h2>
+<p>{{movies|length}} 个条目</p>
+<ul>
+    {% for movie in movies %}
+    <li>{{movie.title}} - {{movie.year}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
